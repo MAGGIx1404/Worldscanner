@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldscanner</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-2.css">
+    <link rel="stylesheet" href="./css/style-2-theme.css">
+</head>
+<body>
+    <nav>
+        <div class="top-nav container">
+            <div class="left-nav">
+                <a href="#" class="top-logo"><img src="./images/logo.png"></a>
+            </div>
+            <div class="right-nav">
+                <a href="#" class="help">Help</a>
+                <a href="#" class="rupees"><span class="first-line">english(UK)</span> <img src="./images/india-rupees.png" class="ind"> india <span class="second-line">₹ INR</span></a>
+                <a href="#" class="login">Login</a>
+            </div>
+        </div>
+        <div class="last-nav container">
+            <a href="#" class="active"><img src="./icons/plane.svg"> flights</a>
+            <a href="#" class="noactive"><img src="./icons/bed.svg"> hotels</a>
+            <a href="#" class="noactive"><img src="./icons/car.svg"> car hire</a>
+        </div>
+    </nav>
+
+    <header>
+        <main class="container">
+            <div class="heading">
+                <h1>let the journey begin</h1>
+            </div>
+            <div class="search-bar">
+                <div class="top-bar">
+                    <label class="type">Return
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="type">One way
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="type">Multi-city
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="center-bar">
+                    <div class="from" id="from-1">
+                        <h6>from</h6>
+                        <input type="text" placeholder="Ahmedabad(AMD)" class="from-input">
+                    </div>
+                    <div class="from" id="from-2">
+                        <h6>to</h6>
+                        <input type="text" placeholder="Country,ity or airport" class="to-input">
+                    </div>
+                    <div class="from" id="from-3">
+                        <h6>depart</h6>
+                        <input type="text" placeholder="08/02/2021" class="depart-input">
+                    </div>
+                    <div class="from" id="from-4">
+                        <h6>return</h6>
+                        <input type="text" placeholder="15/02/2021" class="depart-input">
+                    </div>
+                    <div class="from" id="from-5">
+                        <h6>cabin class & travellers</h6>
+                        <input type="text" placeholder="1 adult,Economy" class="cabin-input">
+                    </div>
+                </div>
+                <div class="last-bar">
+                    <div class="first-side">
+                        <label class="check">
+                            <input type="checkbox">
+                            <h4>add nearly airport</h4>
+                        </label>
+                        <label class="check">
+                            <input type="checkbox">
+                            <h4>direct flights only</h4>
+                        </label>
+                    </div>
+                    <div class="first-side">
+                        <label class="check">
+                            <input type="checkbox">
+                            <h4>add taxi service</h4>
+                        </label>                    
+                        <label class="check">
+                            <input type="checkbox">
+                            <h4>flexible tickets only</h4>
+                        </label>
+                    </div>
+                    <div class="button-box">
+                        <a href="#">search flights -></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <section class="world-map container">
+        <div class="map-info">
+            <h1>COVID-19</h1>
+            <h1>travel info</h1>
+            <p>Navigate travel entry restrictions and quarantine requirements for any destination with our live map. And get updates when things change.</p>
+            <a href="#">view live map -></a>
+        </div>
+        <div class="map-pic">
+            <img src="./images/world-map.jpg">
+        </div>
+    </section>
+    <section class="map-intro container">
+        <div class="heading">
+            <h1>restrictions level</h1>
+        </div>
+        <div class="intro-info">
+            <h1><span class="color-1">1</span> Low</h1>
+            <h1><span class="color-2">2</span> Medium</h1>
+            <h1><span class="color-3">3</span> High</h1>
+            <h1><span class="color-4">4</span> Unknown</h1>
+        </div>
+    </section>
+
+    <section class="open container">
+        <div class="open-info">
+            <h1>Be first to know where's opened up</h1>
+            <p>Sign up to get email updates when restrictions change. And discover the best deals to get you there.</p>
+        </div>
+        <div class="open-intro">
+            <div class="top-open-1">
+                <h5>travelling form</h5>
+                <div class="dropdown">
+                    <button class="dropbtn">India <img src="./icons/dropdown-arrow.svg"></button>
+                    <div class="dropdown-content">
+                        <a href="#">Newyork</a>
+                        <a href="#">torranto</a>
+                        <a href="#">london</a>
+                        <a href="#">delhi</a>
+                        <a href="#">japan</a>
+                        <a href="#">dubai</a>
+                        <a href="#">abu dhabi</a>
+                        <a href="#">katar</a>
+                        <a href="#">brazil</a>
+                        <a href="#">egypt</a>
+                        <a href="#">paris</a>
+                        <a href="#">mosco</a>
+                        <a href="#">korea</a>
+                        <a href="#">china</a>
+                        <a href="#">afghanistan</a>
+                        <a href="#">tokyo</a>
+                        <a href="#">havai</a>
+                        <a href="#">west indies</a>
+                        <a href="#">peru</a>
+                    </div>
+                </div>
+            </div>
+            <input type="text" placeholder="Your email adress" class="email">
+            <div class="dropdown-2">
+                <button class="dropbtn-2">India <img src="./icons/dropdown-arrow.svg"></button>
+                <div class="dropdown-content-2">
+                    <a href="#">usa</a>
+                    <a href="#">brazil</a>
+                    <a href="#">canada</a>
+                    <a href="#">mexico</a>
+                    <a href="#">brazil</a>
+                    <a href="#">egypt</a>
+                    <a href="#">london</a>
+                    <a href="#">paris</a>
+                    <a href="#">mosco</a>
+                    <a href="#">japan</a>
+                    <a href="#">korea</a>
+                    <a href="#">havai</a>
+                    <a href="#">india</a>
+                    <a href="#">nepal</a>
+                    <a href="#">srilanka</a>
+                    <a href="#">maldiv</a>
+                    <a href="#">dubai</a>
+                    <a href="#">abu dhabi</a>
+                    <a href="#">iran</a>
+                </div>
+            </div>
+            <label class="check-box-1">
+                <input type="checkbox">
+                <h6>Opt in to discover the latest deals,tips and news.</h6>
+            </label>
+            <a href="#" class="submit">Get travel updates</a>
+            <p class="para">You can unsubscribe at any time. Read our <a href="#">Privacy Policy</a> for more info.</p>
+        </div>
+    </section>
+
+    <section class="hotel container">
+        <div class="home-heading">
+            <h1>explore closer to home</h1>
+            <div class="para-2">
+                <p>Staying locally doesn’t have to be second rate. Choose an extra special hotel for a trip to remember.</p>
+                <a href="#">see more local destination</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slide-1">
+                <img src="./images/hom1.jpg" class="hotel-pic">
+                <div class="rating">
+                    <h1>4.5</h1>
+                    <div class="rate-bar">
+                        <img src="./images/star.png">
+                        <p>3093 reviews</p>
+                    </div>
+                </div>
+                <div class="slide-box">
+                    <div class="left-slide">
+                        <h4><img src="./icons/loaction.svg"> New delhi,india</h4>
+                        <h1>Holiday in new delhi.....</h1>
+                        <div class="star">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                        </div>
+                        <h3><img src="./icons/pen.svg">rated 4.5/5 for cleanliness</h3>
+                    </div>
+                    <div class="right-slide">
+                        <h1>₹ 2,386</h1>
+                        <p>per night</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <input type="text" placeholder="write review">
+            </div>
+
+            <div class="slide-1">
+                <img src="./images/home2.jpg" class="hotel-pic">
+                <div class="rating">
+                    <h1>4.5</h1>
+                    <div class="rate-bar">
+                        <img src="./images/star.png">
+                        <p>7090 reviews</p>
+                    </div>
+                </div>
+                <div class="slide-box">
+                    <div class="left-slide">
+                        <h4><img src="./icons/loaction.svg"> New delhi,india</h4>
+                        <h1>Radisson Blu Plaza D.....</h1>
+                        <div class="star">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                        </div>
+                        <h3><img src="./icons/pen.svg">rated 4.5/5 for cleanliness</h3>
+                    </div>
+                    <div class="right-slide">
+                        <h1>₹ 2,299</h1>
+                        <p>per night</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <input type="text" placeholder="write review">
+            </div>
+
+            <div class="slide-1">
+                <img src="./images/home3.jpg" class="hotel-pic">
+                <div class="rating">
+                    <h1>4.5</h1>
+                    <div class="rate-bar">
+                        <img src="./images/star.png">
+                        <p>4762 reviews</p>
+                    </div>
+                </div>
+                <div class="slide-box">
+                    <div class="left-slide">
+                        <h4><img src="./icons/loaction.svg"> Mumbai,india</h4>
+                        <h1>Taj lands end.....</h1>
+                        <div class="star">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                        </div>
+                        <h3><img src="./icons/pen.svg">rated 4.5/5 for cleanliness</h3>
+                    </div>
+                    <div class="right-slide">
+                        <h1>₹ 4,083</h1>
+                        <p>per night</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <input type="text" placeholder="write review">
+            </div>
+
+            <div class="slide-1">
+                <img src="./images/home4.jpg" class="hotel-pic">
+                <div class="rating">
+                    <h1>4.5</h1>
+                    <div class="rate-bar">
+                        <img src="./images/star.png">
+                        <p>2182 reviews</p>
+                    </div>
+                </div>
+                <div class="slide-box">
+                    <div class="left-slide">
+                        <h4><img src="./icons/loaction.svg"> Mumbai,india</h4>
+                        <h1>Hilton mumbai intern.....</h1>
+                        <div class="star">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                        </div>
+                        <h3><img src="./icons/pen.svg">rated 4.5/5 for cleanliness</h3>
+                    </div>
+                    <div class="right-slide">
+                        <h1>₹ 3,369</h1>
+                        <p>per night</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <input type="text" placeholder="write review">
+            </div>
+
+            <div class="slide-1">
+                <img src="./images/home5.jpg" class="hotel-pic">
+                <div class="rating">
+                    <h1>4.5</h1>
+                    <div class="rate-bar">
+                        <img src="./images/star.png">
+                        <p>2530 reviews</p>
+                    </div>
+                </div>
+                <div class="slide-box">
+                    <div class="left-slide">
+                        <h4><img src="./icons/loaction.svg"> Bengluru,india</h4>
+                        <h1>JW Marriott Hotel be.....</h1>
+                        <div class="star">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                        </div>
+                        <h3><img src="./icons/pen.svg">rated 4.5/5 for cleanliness</h3>
+                    </div>
+                    <div class="right-slide">
+                        <h1>₹ 5,541</h1>
+                        <p>per night</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <input type="text" placeholder="write review">
+            </div>
+
+            <div class="slide-1">
+                <img src="./images/home6.jpg" class="hotel-pic">
+                <div class="rating">
+                    <h1>4.5</h1>
+                    <div class="rate-bar">
+                        <img src="./images/star.png">
+                        <p>3551 reviews</p>
+                    </div>
+                </div>
+                <div class="slide-box">
+                    <div class="left-slide">
+                        <h4><img src="./icons/loaction.svg"> Bengluru,india</h4>
+                        <h1>ITC gardnia,A Luxu.....</h1>
+                        <div class="star">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                            <img src="./icons/star.svg">
+                        </div>
+                        <h3><img src="./icons/pen.svg">rated 4.5/5 for cleanliness</h3>
+                    </div>
+                    <div class="right-slide">
+                        <h1>₹ 4,481</h1>
+                        <p>per night</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <input type="text" placeholder="write review">
+            </div>
+        </div>
+    </section>
+
+    <section class="features container">
+        <div class="features-head">
+            <h1>Book with peace of mind</h1>
+            <p>Take the next step and choose booking options that can be changed or cancelled later. So you can plan with more confidence as the world reopens.</p>
+        </div>
+        <div class="features-info">
+            <div class="card-1">
+                <img src="./images/flight.svg">
+                <h1>flights</h1>
+                <p>Many airlines have new policies so you won’t lose out if your flights need to be changed or cancelled.</p>
+                <h2>Look out for flexible tickets</h2>
+            </div>
+            <div class="card-1">
+                <img src="./images/hotels.svg">
+                <h1>hotels</h1>
+                <p>It’s easy to stay flexible, you can book now then decide if it’s right to go later.</p>
+                <a href="#">view hotels with free cancellation</a>
+            </div>
+            <div class="card-1">
+                <img src="./images/cars.svg">
+                <h1>car hires</h1>
+                <p>Keep your options open. It’s free to cancel with most providers, or for a small fee, up to 48 hours before.</p>
+                <a href="#">find cars you can cancel</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reco container">
+        <div class="reco-head">
+            <h1>Recommendations for you</h1>
+            <a href="#">search everywhere ></a>
+        </div>
+        <div class="reco-info">
+            <div class="reco-card-1">
+                <div class="reco-img">
+                    <img src="./images/newyork.jpg" class="new-1">
+                </div>
+                <div class="reco-intro">
+                    <h1>Newyork,<span>United States</span></h1>
+                    <a href="#">Get prices ></a>
+                </div>
+            </div>
+            <div class="reco-card-2">
+                <div class="reco-img">
+                    <img src="./images/newyork-2.jpg" class="new-2">
+                </div>
+                <div class="reco-intro">
+                    <h1>Denpasar,<span>Indonesia</span></h1>
+                    <a href="#">Get prices ></a>
+                </div>
+            </div>
+            <div class="reco-card-2">
+                <div class="reco-img">
+                    <img src="./images/newyork-3.jpeg" class="new-2">
+                </div>
+                <div class="reco-intro">
+                    <h1>Istanbul,<span>Turkey</span></h1>
+                    <a href="#">Get prices ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="weekend container">
+        <div class="weekend-head">
+            <h1>Weekend breaks</h1>
+            <a href="#">search everywhere></a>
+        </div>
+        <div class="weekend-info">
+            <div class="weekend-pic">
+                <img src="./images/newyork-7.jpg" class="top-pic">
+            </div>
+            <div class="weekend-intro">
+                <h1>Paris,<span>Europe</span></h1>
+                <a href="#">get prices ></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="last-deal container">
+        <div class="last-deal-head">
+            <h1>april deals</h1>
+            <a href="#">search everywhere ></a>
+        </div>
+        <div class="last-info">
+            <div class="last-card" id="aust">
+                <div class="last-pic">
+                    <img src="./images/newyork-4.jpeg" class="new-3">
+                </div>
+                <div class="last-intro">
+                    <h1>melbourne,<span>australia</span></h1>
+                    <a href="#">get prizes ></a>
+                </div>
+            </div>
+            <div class="last-card" id="aust-2">
+                <div class="last-pic">
+                    <img src="./images/newyork-5.jpeg" class="new-3">
+                </div>
+                <div class="last-intro">
+                    <h1>kaula lampur,<span>malasiya</span></h1>
+                    <a href="#">get prizes ></a>
+                </div>
+            </div>
+            <div class="last-card" id="aust-2">
+                <div class="last-pic">
+                    <img src="./images/newyork-6.jpeg" class="new-3">
+                </div>
+                <div class="last-intro">
+                    <h1>san fransisco,<span>united States</span></h1>
+                    <a href="#">get prizes ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="type-2">
+        <div class="type-2-info container">
+            <div class="card-type" id="type-1">
+                <img src="./images/s1.svg">
+                <h1>Go anywhere</h1>
+                <p>It’s your world and we’ll help you explore it. Find the best prices across millions of flights, hotels and car hire options to create your perfect trip.</p>
+            </div>
+            <div class="card-type" id="type-2">
+                <img src="./images/s2.svg">
+                <h1>Keep it simple</h1>
+                <p>No hidden fees. No hidden charges. No funny business. With us, you'll always know exactly where your money goes. So you can relax before your trip even begins.</p>
+            </div>
+            <div class="card-type" id="type-3">
+                <img src="./images/s3.svg">
+                <h1>Travel your way</h1>
+                <p>Know where you want to go? See the best time to book. Feeling flexible? Get deals on everything from quick breaks to epic adventures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="trips container">
+        <div class="trips-heading">
+            <h1>Plan your perfect trip</h1>
+            <p>Search Flights, Hotels & Car Hire to our most popular destinations</p>
+        </div>
+        <div class="trips-info">
+            <div class="trips-1">
+                <div class="trips-card" id="tip-1">
+                    <div class="trips-pic">
+                        <img src="./images/f1.gif" class="tour-1">
+                    </div>
+                    <div class="trips-intro">
+                        <h1>marmagao</h1>
+                        <p><a href="#">Flights</a> . <a href="#">Hotels</a> . <a href="#">Car Hire</a></p>
+                    </div>
+                </div>
+                <div class="trips-card" id="tip-4">
+                    <div class="trips-pic">
+                        <img src="./images/f4.jpg" class="tour-1">
+                    </div>
+                    <div class="trips-intro">
+                        <h1>bangkok</h1>
+                        <p><a href="#">Flights</a> . <a href="#">Hotels</a> . <a href="#">Car Hire</a></p>
+                    </div>
+                </div>
+                <div class="trips-card" id="tip-7">
+                    <div class="trips-pic">
+                        <img src="./images/f7.jpg" class="tour-1">
+                    </div>
+                    <div class="trips-intro">
+                        <h1>chennai</h1>
+                        <p><a href="#">Flights</a> . <a href="#">Hotels</a> . <a href="#">Car Hire</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trips-2">
+                <div class="trips-card" id="tip-2">
+                    <div class="trips-pic">
+                        <img src="./images/f2.jpg" class="tour-2">
+                    </div>
+                    <div class="trips-intro">
+                        <h1>new delhi</h1>
+                        <p><a href="#">Flights</a> . <a href="#">Hotels</a> . <a href="#">Car Hire</a></p>
+                    </div>
+                </div>
+                <div class="trips-card" id="tip-5">
+                    <div class="trips-pic">
+                        <img src="./images/f5.jpg" class="tour-2">
+                    </div>
+                    <div class="trips-intro">
+                        <h1>dubai</h1>
+                        <p><a href="#">Flights</a> . <a href="#">Hotels</a> . <a href="#">Car Hire</a></p>
+                    </div>
+                </div>
+                <div class="trips-card" id="tip-8">
+                    <div class="trips-pic">
+                        <img src="./images/f8.jpg" class="tour-2">
+                    </div>
+                    <div class="trips-intro">
+                        <h1>singapour</h1>
+                        <p><a href="#">Flights</a> . <a href="#">Hotels</a> . <a href="#">Car Hire</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trips-3">
+                <div class="trips-card" id="tip-3">
+                    <div class="trips-pic">
+                        <img src="./images/f3.jpg" class="tour-3">
+                    </div>
+                    <div class="trips-intro">
+                        <h1>mumbai</h1>
+                        <p><a href="#">Flights</a> . <a href="#">Hotels</a> . <a href="#">Car Hire</a></p>
+                    </div>
+                </div>
+                <div class="trips-card" id="tip-6">
+                    <div class="trips-pic">
+                        <img src="./images/f6.jpg" class="tour-3">
+                    </div>
+                    <div class="trips-intro">
+                        <h1>Bengluru</h1>
+                        <p><a href="#">Flights</a> . <a href="#">Hotels</a> . <a href="#">Car Hire</a></p>
+                    </div>
+                </div>
+                <div class="trips-card" id="tip-9">
+                    <div class="trips-pic">
+                        <img src="./images/f9.jpg" class="tour-3">
+                    </div>
+                    <div class="trips-intro">
+                        <h1>kochi</h1>
+                        <p><a href="#">Flights</a> . <a href="#">Hotels</a> . <a href="#">Car Hire</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-1 container">
+            <div class="foot-1" id="foot-1">
+                <h1>explore</h1>
+                <a href="#">cities <span>+</span></a>
+                <a href="#">city breaks <span>+</span></a>
+                <a href="#">airports</a>
+                <a href="#">countries/Regions <span>+</span></a>
+                <a href="#">airlines</a>
+                <a href="#">flights</a>
+                <a href="#">hotels</a>
+                <a href="#">car hire</a>
+                <a href="#">app</a>
+            </div>
+            <div class="foot-1" id="foot-2">
+                <h1>partners</h1>
+                <a href="#">work with us</a>
+                <a href="#">advertise with us</a>
+                <a href="#">travel insight</a>
+                <a href="#">affiliates</a>
+                <a href="#">travel APIs</a>
+            </div>
+            <div class="foot-1" id="foot-3">
+                <h1>company</h1>
+                <a href="#">about us</a>
+                <a href="#">why Worldscanner?</a>
+                <a href="#">media</a>
+                <a href="#">our people</a>
+                <a href="#">sustainability</a>
+                <a href="#">brand story</a>
+                <a href="#">company details</a>
+                <a href="#">jobs</a>
+                <a href="#">travel features & news</a>
+                <a href="#">cookie policy</a>
+                <a href="#">privacy Policy</a>
+                <a href="#">terms of service</a>
+            </div>
+            <div class="foot-1" id="foot-4">
+                <h1>Help</h1>
+                <a href="#">help</a>
+                <a href="#">privacy settings</a>
+                <a href="#">security</a>
+            </div>
+        </div>
+        <div class="footer-2 container">
+            <h1>contact :</h1>
+            <p>Address : A-212,block-c human site-3,behind alien colony,opposite SPD(space petrol delta) headquater, moon, galaxy.</p>
+            <div class="contact">
+                <a href="#"><img src="./icons/facebook.svg"></a>
+                <a href="#"><img src="./icons/instagram.svg"></a>
+                <a href="#"><img src="./icons/twitter.svg"></a>
+            </div>
+        </div>
+        <div class="copyright container">
+            <h5>@copyright 2020-2100 year.read privacy and security.</h5>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./javascript/app-min.js"></script>
+    <script src="./javascript/app.js"></script>
+    <script>
+        $('.slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 500,
+        });
+
+    </script>
+</body>
+</html>
